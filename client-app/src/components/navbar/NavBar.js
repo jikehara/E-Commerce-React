@@ -11,9 +11,7 @@ const style = {
   }
 }
 
-
-
-const NavBar = () => {
+const NavBar = (props) => {
 
   let styleActive = false;
 
@@ -29,6 +27,7 @@ const NavBar = () => {
             <li><Link to='/' >Home</Link></li>
             <li><Link to='/about'>About</Link></li>
             <li><Link to='/shop'>Shop</Link></li>
+            <li><p>Your Cart:{ props.numItemsInCart }</p></li>
           </ul>
         </div>
       </nav>

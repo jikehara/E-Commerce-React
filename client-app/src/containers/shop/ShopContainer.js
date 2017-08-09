@@ -1,6 +1,7 @@
 import React from 'react';
 import Faker from 'faker';
 import {Shop} from '../../components';
+import Layout from '../../Layout';
 
 class ShopContainer extends React.Component {
 
@@ -50,7 +51,8 @@ class ShopContainer extends React.Component {
       <div>
         {
           this.state.title && this.state.products
-          ? <Shop title={this.state.title} products={this.state.products} addItem={this.addToCart} />
+          ? <Layout title={this.state.title} products={this.state.products} addItem={this.addToCart}
+          cart={this.state.cart} />
           : <h1>Missing Title or Products</h1>
         }
       </div>
