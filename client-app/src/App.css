@@ -36,3 +36,7 @@
   border: 0.1em solid blue;
   border-radius: 0.5em;
 }
+
+.btn-add-to-cart {
+  margin: 0.2em;
+}

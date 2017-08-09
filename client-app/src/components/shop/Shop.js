@@ -1,4 +1,5 @@
 import React from 'react';
+import ShopTile from './ShopTile'
 
 const Shop = (props) => {
   return (
@@ -9,14 +10,11 @@ const Shop = (props) => {
         {
           props.products.map((item, index) => (
             <div key={index} className="product-card">
-              <h3>{ item.productName }</h3>
-              <p>${ item.productPrice }</p>
-              <img src={ item.productPicture } />
+              <ShopTile item={ item } addItem={props.addItem}/>
             </div>
           ))
         }
       </div>
-
     </div>
   )
 }
