@@ -3,7 +3,7 @@ import {About} from '../../components';
 
 class AboutContainer extends React.Component {
 
-  state ={
+  state = {
     title: undefined
   }
 
@@ -22,8 +22,8 @@ class AboutContainer extends React.Component {
       <div>
         {
           this.state.title
-          ? <About title={this.state.title} />
-          : <h1>Waiting for About Title</h1>
+          ? <About title={this.state.title}/>
+          : <h1>No Title for this page</h1>
         }
       </div>
     )

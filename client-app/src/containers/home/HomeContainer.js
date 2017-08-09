@@ -8,13 +8,13 @@ class HomeContainer extends React.Component {
   }
 
   componentDidMount() {
-    this.getTitle();
+    this.setTitle();
   }
 
-  getTitle = () => {
+  setTitle = () => {
     setTimeout(() => {
-      this.setState({ title: "State Home Title"});
-    }, 3000);
+      this.setState({ title: "Home"})
+    }, 2000)
   }
 
   render() {
@@ -22,8 +22,8 @@ class HomeContainer extends React.Component {
       <div>
         {
           this.state.title
-          ? <Home title={this.state.title} />
-          : <h1>No state yet</h1>
+          ? <Home title={this.state.title}/>
+          : <h1>No Title for this page</h1>
         }
       </div>
     )
