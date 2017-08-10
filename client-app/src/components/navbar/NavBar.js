@@ -13,7 +13,7 @@ const style = {
 
 const NavBar = (props) => {
 
-  let styleActive = false;
+  let styleActive = true;
 
   return (
     <div>
@@ -27,7 +27,8 @@ const NavBar = (props) => {
             <li><Link to='/' >Home</Link></li>
             <li><Link to='/about'>About</Link></li>
             <li><Link to='/shop'>Shop</Link></li>
-            <li><p>Your Cart:{ props.numItemsInCart }</p></li>
+            <li><Link to='/profile'>Your Profile</Link></li>
+            <li><Link to='/cart'>Your Cart:{ props.numItemsInCart } at ${props.totalPrice}</Link></li>
           </ul>
         </div>
       </nav>

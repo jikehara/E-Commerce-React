@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import {ShopContainer} from './containers';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import {DataProvider} from './containers';
+import {BrowserRouter as Router} from 'react-router-dom';
 
 
 // <div>
@@ -16,7 +16,7 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-          <ShopContainer />
+          <DataProvider />
         </Router>
 
       </div>
