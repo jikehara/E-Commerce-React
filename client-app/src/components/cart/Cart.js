@@ -7,7 +7,7 @@ const Cart = (props) => {
     <div>
       <h1>Hello from your Cart!</h1>
       <h2>Your current total is: ${props.totalPrice}</h2>
-      <div className='user-cart'>
+      <div className='cart-tile-container'>
         {
           props.cart.map((item, index) => <CartTile item={item} key={index}/>)
         }

@@ -18,17 +18,19 @@
   display: flex;
   flex-flow: row wrap;
   width: calc(100%-20px);
+  justify-content: center;
 }
 
 .product-card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   border: 0.2em solid blue;
   border-radius: 1em;
   max-width: calc(50% - 5em);
   margin: 1em;
   padding: 10px;
-  align-items: center;
+  background-color: #d4d8dd;
+  justify-content: center;
 }
 
 .product-card img {
@@ -39,4 +41,39 @@
 
 .btn-add-to-cart {
   margin: 0.2em;
+}
+
+.user-card {
+  background-image: url(https://d1k8kvpjaf8geh.cloudfront.net/gp/profile/assets/default_desktop_cover_photo_small-7f5486f4b1e134ace992707821e2b07eec7b272687a411fa0511b13ef2b0035b.png);
+  border: 0.2em solid #4286f4;
+  border-radius: 0.1em;
+  padding: 1em;
+}
+
+.user-card > img {
+  border: 0.1em solid #4286f4;
+  border-radius: 100%;
+}
+
+.shop {
+  background-image: url(https://thumbs.dreamstime.com/z/super-foods-spoons-bowls-wooden-background-68349303.jpg);
+  background-repeat: repeat;
+}
+
+.cart-tile-container {
+  border: 1px solid red;
+  padding: 1em;
+}
+
+.cart-tile {
+  border: 1px solid grey;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.cart-tile img {
+  border: 1px solid grey;
+  width: 50%;
+  height: 50%;
 }

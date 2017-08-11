@@ -3,8 +3,7 @@ import ShopTile from './ShopTile'
 
 const Shop = (props) => {
   return (
-    <div>
-      <h1>Hello from {props.title}!</h1>
+    <div className="shop">
 
       <div className="product-card-container">
         {
