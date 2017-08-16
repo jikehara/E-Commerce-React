@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import './App.css';
-import {HomeContainer, AboutContainer} from './containers';
-import {Route, Switch} from 'react-router-dom';
-import {NavBar, Shop, Cart, Profile} from './components';
+import React, { Component } from 'react'
+import './App.css'
+import {HomeContainer, AboutContainer} from './containers'
+import {Route, Switch} from 'react-router-dom'
+import {NavBar, Shop, Cart, Profile} from './components'
 // import Faker from 'faker';
 
 class Layout extends Component {
-  render() {
+  render () {
     return (
       <div>
         <NavBar
@@ -47,8 +47,8 @@ class Layout extends Component {
           </Switch>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Layout;
+export default Layout

@@ -1,0 +1,35 @@
+{
+  "name": "shopping-cart",
+  "version": "1.0.0",
+  "description": "An E-Commerce application",
+  "main": "server.js",
+  "scripts": {
+    "test": "NODE_ENV=test && sudo mocha --timeout 10000",
+    "start": "NODE_ENV=dev && sudo nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jikehara/E-Commerce-React.git"
+  },
+  "author": "Joseph Ikehara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jikehara/E-Commerce-React/issues"
+  },
+  "homepage": "https://github.com/jikehara/E-Commerce-React#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.7"
+  },
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "chai-http": "^3.0.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-config-standard-react": "^5.0.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "react-scripts": "1.0.11"
+  }
+}
