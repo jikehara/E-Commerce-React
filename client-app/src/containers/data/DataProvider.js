@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Faker from 'faker';
 // import {Shop} from '../../components';
 import Layout from '../../Layout';
 
-class DataProvider extends React.Component {
+class DataProvider extends Component {
 
   state = {
     title: undefined,

@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {About} from '../../components';
 
-class AboutContainer extends React.Component {
+class AboutContainer extends Component {
 
   state = {
     title: undefined
