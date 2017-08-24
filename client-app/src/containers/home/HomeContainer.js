@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
 import {Home} from '../../components'
 
 class HomeContainer extends Component {
@@ -8,7 +8,7 @@ class HomeContainer extends Component {
   }
 
   componentDidMount() {
-    this.setTitle();
+    this.setTitle()
   }
 
   setTitle = () => {

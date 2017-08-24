@@ -10,7 +10,8 @@ class DataProvider extends Component {
     products: null,
     cart: [],
     user: null,
-    isDataLoaded: false
+    isDataLoaded: false,
+    product: {}
   }
 
   componentDidMount() {
@@ -41,6 +42,13 @@ class DataProvider extends Component {
       avatar: Faker.internet.avatar()
     }
     this.setState({ user: user })
+  }
+
+  onChange = (type, value) => {
+    const newProduct = this.state.product
+    newProduct[type] = value
+    this.setState({ product: newProduct })
+    console.log(newProduct)
   }
 
   addToCart = (product) => {
@@ -74,6 +82,7 @@ class DataProvider extends Component {
               cart={this.state.cart}
               totalPrice={totalPrice}
               user={this.state.user}
+              onChange={this.onChange}
             />
           : <h1>Missing Data</h1>
         }

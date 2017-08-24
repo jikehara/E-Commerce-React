@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './App.css'
-import {HomeContainer, AboutContainer} from './containers'
+import {HomeContainer, AboutContainer, SubmitProductContainer} from './containers'
 import {Route, Switch} from 'react-router-dom'
 import {NavBar, Shop, Cart, Profile} from './components'
 // import Faker from 'faker';
@@ -42,6 +42,12 @@ class Layout extends Component {
                 <Profile
                   user={this.props.user}
                 />
+              }
+            />
+            <Route
+              path='/submit-product'
+              render={() =>
+                <SubmitProductContainer onChange={this.props.onChange}/>
               }
             />
           </Switch>
